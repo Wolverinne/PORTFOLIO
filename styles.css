@@ -1,0 +1,207 @@
+:root {
+    /* --primary-color: #2563EB; */
+    /* --primary-color: #5680e9; */
+    --primary-color: #10B981;
+    --off-white: #F3F4F6;
+    --dark-gray: #6B7280;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    background-color:#ECFDF5;
+    /* background-color: #84ceeb; */
+
+}
+a{
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+.navigation {
+    
+    background-color: var(--primary-color);
+    block-size: 150px;
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+
+}
+.navigation .nav-brand {
+    font-weight: bold;
+    padding-top: 2rem;
+}
+.navigation .nav-buttons {
+    text-align: right;
+    padding-top: 2rem;
+}
+.navigation .link{
+    color: white;
+}
+
+/* LISTS */
+.list-item-inline {
+    display: inline;
+    padding: 1rem 1.5rem;
+} 
+
+.container-centered {
+    max-width: 900px;
+    margin: auto;
+  }
+
+
+
+
+
+
+
+
+/* HEADER */
+.hero {
+    padding: 2rem;
+    padding-top: 5rem;
+
+}
+.hero .hero-img {
+    max-width: 80%;
+    width: 450px;
+    display: block;
+    margin: auto;
+
+}
+
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1.3rem;
+    color:var(--dark-gray)
+}
+
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
+
+
+
+.tech {
+    padding: 0rem 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* PROJECTS PAGE */
+.project-img {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    width: 250px;
+
+}
+.project {
+    padding-left: 1rem;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+
+}
+
+.projects{
+    text-align: center;
+}
+
+
+
+
+
+.projects button {
+    background:#059669;
+    color:whitesmoke;
+    font-size: 1rem;
+    border:0;
+    padding:0.9rem;
+    cursor: pointer;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+   
+}
+
+.project-one {
+    display: block;
+    padding-bottom: 4rem;
+}
+
+
+
+
+
+.blogs-img{
+    width: 250px;
+    max-width: 80%;
+    margin: auto;
+}
+
+
+.blogs {
+    color: #064E3B;
+    font-size: large;
+    ;
+
+}
+.rm-link {
+    padding-bottom: 2rem;
+}
+
+
+
+
+/** footers **/
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer .link {
+    color: white
+}
+
+.footer .footer-ul {
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 2rem;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hr{
+    margin: 2rem 0rem;
+} */
+.margin-md{
+    margin: 2rem;
+}
+.container-center {
+    padding: 0rem 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+}
