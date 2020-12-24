@@ -14,7 +14,7 @@
 
         <!-- navigation starts Here -->
         <nav class="navigation container">
-            <div class="nav-brand">PARTH'S PORTFOLIO<div>
+            <h1 class="nav-brand">PARTH'S PORTFOLIO</h1>
                     <ul class="nav-buttons">
                         <li class="list-item-inline"><a class="link link-active" href="#home">HOME</a></li>
                         <li class="list-item-inline"><a class="link" href="#About">ABOUT</a></li>
@@ -25,48 +25,56 @@
         </nav>
 
 
-        <!-- HEADER -->
+        
+
+
+
+
+
+
+
+
+
+       
+              <!-- HEADER -->
         <header class="hero">
             <img class="hero-img" src="images/1.svg">
 
-            <h1 class="hero-heading">PARTH YADAV <br><Span class="heading-inverted">SOFTWARE DEVELOPER</Span></h1>
+            <h1 class="hero-heading">PARTH YADAV <br><span class="heading-inverted">SOFTWARE DEVELOPER</span></h1>
         </header>
 
-
+        <main class="body--container">
         <div class="tech">
             <h1>TECHNOLOGIES</h1>
-            <p>I'm familiar with HTML5,CSS,Git,Javascript,NodeJS,ReactJS,Python,Data Science.</p>
+            <p>I'm familiar with
+                <ul class="skill-list--container">
+                    <li class="skill-tab">HTML5</li>
+                    <li class="skill-tab">CSS</li>
+                    <li class="skill-tab">Git</li>
+                    <li class="skill-tab">Javascript</li>
+                    <li class="skill-tab">Node.js</li>
+                    <li class="skill-tab">React Js</li>
+                    <li class="skill-tab">Python</li>
+                    <li class="skill-tab">Data Science</li>
+                </ul>
+            </p>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<!--
+            <form className='main-search-input'>
+                <input className='form-control' type='text'/>
+            </form>
+        -->
         <!-- <a name="About">about</a>:> -->
-
-
-
-
-
-
-
-
+        <h1 id="PROJECTS" class="project">PROJECTS</h1>
         <div class="projects">
-
+            
             <a name="PROJECTS"></a>
-            <h1><span class="project">PROJECTS</span></h1></a>
+           
             <img class="project-img" src="https://vaibhavkaul.me/assets/projects.png">
 
             <div class="project-one">
-                <h1>knowCoderInsideYou</h1>
+                <h1>Chess Quiz</h1>
                 <p><strong>This is a CLI Based Chess quiz,Dive right in to check your chess knowledge.</strong></p>
                 <a href="https://repl.it/@ParthYadav/CHESSQUIZ-1?embed=1&output=1#index.js" target="_blank"><button
                         type="button">Live Project</button></a>
@@ -106,6 +114,8 @@
             </div>
 
 
+        </main>
+      
 
             <footer class="footer">
                 <div class="footer-ul">SOCIAL MEDIA PRESENCE</div>

@@ -5,6 +5,9 @@
     --off-white: #F3F4F6;
     --dark-gray: #6B7280;
 }
+*{
+    scroll-behavior:smooth;
+    } 
 
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
@@ -12,50 +15,65 @@
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0px;
-    background-color: #ECFDF5;
-    /* background-color: #84ceeb; */
+     background-color: #ECFDF5; 
+    /* background-color: #84ceeb;  */
+    /* background-image: radial-gradient(#5680E9, #84CEEB,#5AB9EA,#C1C8E4,#8860D0); */
+    
 
+}
+
+.container-centered {
+    width: 100%;
+    margin: auto;
 }
 
 a {
     text-decoration: none;
 }
-
+.body--container{
+    width:80%;
+    margin:0rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 /* NAVIGATION */
 .navigation {
-
-    background-color: var(--primary-color);
-    block-size: 150px;
+   background-color: transparent;
+   position: fixed;
+   width: 100%;
+   top:0px;
+    /* block-size: 150px; */
     color: white;
     padding: 1rem;
-    border-bottom-left-radius: 1rem;
-
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    align-items: center;
 }
 
 .navigation .nav-brand {
     font-weight: bold;
-    padding-top: 2rem;
+    color: #fff;
 }
 
 .navigation .nav-buttons {
     text-align: right;
-    padding-top: 2rem;
+    padding-right: 30px;
 }
 
 .navigation .link {
-    color: white;
+    color: #fff;
 }
 
 /* LISTS */
 .list-item-inline {
     display: inline;
-    padding: 1rem 1.5rem;
+   margin: 20px;
 }
 
-.container-centered {
-    max-width: 900px;
-    margin: auto;
-}
+
 
 
 
@@ -66,22 +84,24 @@ a {
 
 /* HEADER */
 .hero {
-    padding: 2rem;
-    padding-top: 5rem;
-
+    height: 100vh;
+    width:100%;
+    background:linear-gradient(to right bottom,#0009,#0009,#1a1a1a), url('https://wallpaperset.com/w/full/0/7/2/313022.jpg');
+    display: flex;
+    background-size: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .hero .hero-img {
-    max-width: 80%;
-    width: 450px;
-    display: block;
-    margin: auto;
-
+  width:300px;
 }
 
 .hero .hero-heading {
-    text-align: center;
-    padding-top: 1.3rem;
+    font-size: 3rem;
+    text-align: left;
+   margin-left: 40px;
     color: var(--dark-gray)
 }
 
@@ -95,8 +115,33 @@ a {
     padding: 0rem 1rem;
     padding-bottom: 2rem;
     font-size: 1.1rem;
+    width:100%;
+    color: var(--primary-color);
 }
 
+/** SKilss css**/
+.skill-list--container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.skill-tab{
+    min-width:50px;
+    height: 40px;
+    font-size: 15px;
+    margin:5px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #059669;
+    color: #fff;
+    box-shadow: 0 2px 24px 0 rgba(0,0,0,.2);
+}
 /* PROJECTS PAGE */
 .project-img {
     display: block;
@@ -110,12 +155,10 @@ a {
     padding-left: 1rem;
     color: var(--primary-color);
     font-size: 2.5rem;
-
+    text-align: left;
+    width: 100%;
 }
 
-.projects {
-    text-align: center;
-}
 
 
 
@@ -189,19 +232,6 @@ a {
     color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* hr{
     margin: 2rem 0rem;
 } */
@@ -213,4 +243,15 @@ a {
     padding: 0rem 1rem;
     padding-bottom: 2rem;
     font-size: 1.1rem;
+}
+
+@media all and (max-width:700px){
+    .hero .hero-heading {
+        font-size: 2rem;
+    }
+    
+    .hero .hero-heading .heading-inverted {
+       
+    }
+    
 }
